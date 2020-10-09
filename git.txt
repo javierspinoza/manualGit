@@ -1,0 +1,52 @@
+MANUAL DE GIT
+https://rogerdudler.github.io/git-guide/index.es.html
+https://www.atlassian.com/es/git/tutorials/setting-up-a-repository
+ESTA URL ES LA DOCUMENTACION
+https://gist.github.com/cgonzalezdai/cc33db72a6fe5178637aabb562eae35c
+//EXELENTE PARA SUBIR UN REPOSITORIO//////////////////////////////////////
+:::::::::::::::::::::::::::::::::::::::::
+                                                                 <<<<PARA GUARDARLO LOCAL Y SUBIRLO A LA NUBE POR PRIMERA VEZ>>>>>>
+1: CREAMOS UNA CARPETA PARA EMPEZAR A TRABAJAR
+
+2: ABRIMOS LA CARPETA CON LA CONSOLA
+
+3: DESPUES DE ESTAR EN LA CARPETA INICIALIZAMOS GIT CON ESTE COMANDO "git init" y el nos crea una carpeta dentro de nuestro proyecto que sera el repositorio
+
+4:"git status " es para saber como esta mi proyecto es decir que archivos me hacen falta subir a mi repositorio local, los archivos en color rojo me hacen falta subirlos y los de color verde ya estan subidos en mi repositorio que acabamos de crear
+
+5:para agregar todos los archivos a mi repositorio local escribo el siguiente comando "git add ."
+si quiero agregar un solo archivo es de la siguiente manera "git add index.html", despues del add va el nombre del archivo que voy agregar
+
+6:despues de que todos los archivos esten de color verde es porque ya estan guardados en mi repositorio de forma local
+
+7:para subir los archivos a mi cuenta de git pero local en el repositorio escribo esto en la consola [git commit -m "Cree el nuevo proyecto"] LOS CORCHETES NO VAN, 
+
+8:despues envio el siguiente comando para especificar el nombre del proyecto y mi usuario pero antes de esto debo haber ya creado el nombre del proyecto en git, el comando es el siguiente------------git remote add origin https://github.com/javierspinoza/NOMBRE_PROYECTO.git
+
+9: finalmente lo enviamos a la nubel------------git push -u origin master------
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                   <<<<<<PARA SUBIRLO A LA NUBE>>>>>
+
+1: para subirlo a la nube son los siguientes pasos  --git add .--
+luego --git commit -m "Cree el nuevo proyecto"-- luego --git push -u origin master-- esto es ya teniendo inicializado el proyecto con git 
+
+                        <<<<PARA DESCARGAR LA ACTUALIZACION DE UN PROYECTO >>>>
+1: escribo en consola de mi editor de cogigo lo siguiente --git pull--
+
+                         <<<<<<<PARA DESCARGAR UN PROYECTO YA MONTADO EN GITHUB>>>>>>>>
+
+1: ahora si tenemos un proyecto en git y queremeos descargarlo hacemos lo siguiente: entramos al repositorio o proyecto que queremos descargar y copiamos la url que este nos arroja y accedemos con la consola a la nueva carpeta donde lo quiero guardar y copiamos este comando  [ git clone https://github.com/javierspinoza/App-Adsi.git ], que la url es la que nos arrojo el proyecto
+ahora se nos descargo una carpeta junto con todos los archivos
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>> PARA CREAR RAMAS Y DEMAS
+
+1: git branch------ para saber en que rama estamos
+2: git branch javier----- crear la rama JAVIER es el nombre de la rama
+3: git checkout javier ------ para cambiarnos a la rama --------- para eliminar la rama es : [git branch -d javier] SIN LOS CORCHETES
+4: estando ya en la nueva rama nos ponemos a trabajar en el codigo que vamos a realizar, cuando hayamos terminado hacemos lo siguiente --- git commit -am "cree el nuevo metodo"------- que es agregar el codigo mas el comentario
+5:ahaora tenemos que devolvernos a la rama principal llamada MASTER
+6: hacer un PULL por si llega haber alguna actualizacion para poder subir nuestro trabajo
+7 : ahora hacemos esto----git merge javier -m "cree el metodo multiplicacion"---- que es para fucionar mi rama con la master y agregar el comentario
+
+8: finalmente hacemos el push para subirlo a la nube ----git push -u origin master ----
