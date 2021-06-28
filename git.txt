@@ -4,6 +4,9 @@ https://www.atlassian.com/es/git/tutorials/setting-up-a-repository
 ESTA URL ES LA DOCUMENTACION
 https://gist.github.com/cgonzalezdai/cc33db72a6fe5178637aabb562eae35c
 //EXELENTE PARA SUBIR UN REPOSITORIO//////////////////////////////////////
+
+
+bienvenido
 :::::::::::::::::::::::::::::::::::::::::
                                                                  <<<<PARA GUARDARLO LOCAL Y SUBIRLO A LA NUBE POR PRIMERA VEZ>>>>>>
 1: CREAMOS UNA CARPETA PARA EMPEZAR A TRABAJAR
